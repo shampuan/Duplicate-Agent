@@ -1,7 +1,7 @@
 # Duplicate-Agent
 Duplicate Files Finder and Cleaner
 
-<img width="64" height="64" alt="dup" src="https://github.com/user-attachments/assets/cdfbf06e-05cb-400e-83f8-9e4678b29bad" />
+<img width="687" height="664" alt="ccc (kopya 1)" src="https://github.com/user-attachments/assets/8e95524a-9c52-4b1f-8628-831b63131ffe" />
 
 This program was created to detect and delete unnecessary files on your computer that you've unknowingly created, copied, or backed up in some way.
 
