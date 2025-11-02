@@ -5,7 +5,7 @@ Duplicate Files Finder and Cleaner
 
 This program was created to detect and delete unnecessary files on your computer that you've unknowingly created, copied, or backed up in some way.
 
-This program was created with artificial intelligence and is presented to you. I originally created the program for myself, but GNU also recommends "share it with your neighbor."
+This program was created with python3+pyqt5 and is presented to you. I originally created the program for myself, but GNU also recommends "share it with your neighbor."
 
 This is a file deletion program and requires careful use. Additionally:
 
