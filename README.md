@@ -3,6 +3,11 @@ Duplicate Files Finder and Cleaner
 
 <img width="128" height="124" alt="ccc (kopya 1) (kopya 1)" src="https://github.com/user-attachments/assets/3118c083-7fa0-4100-9fda-51ac7aaa668e" />
 
+Upgraded the icon.
+
+<img width="64" height="64" alt="dup" src="https://github.com/user-attachments/assets/e64d8388-556d-48cf-a11e-cc95dfc350e6" />
+0.2.0 version: Added file extension filter
+
 This program was created to detect and delete unnecessary files on your computer that you've unknowingly created, copied, or backed up in some way.
 
 This program was created with python3+pyqt5 and is presented to you. I originally created the program for myself, but GNU also recommends "share it with your neighbor."
