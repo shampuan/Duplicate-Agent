@@ -6,6 +6,7 @@ Duplicate Files Finder and Cleaner
 Upgraded the icon.
 
 <img width="64" height="64" alt="dup" src="https://github.com/user-attachments/assets/e64d8388-556d-48cf-a11e-cc95dfc350e6" />
+
 0.2.0 version: Added file extension filter
 
 This program was created to detect and delete unnecessary files on your computer that you've unknowingly created, copied, or backed up in some way.
@@ -16,10 +17,9 @@ This is a file deletion program and requires careful use. Additionally:
 
 The program is still in beta and has some known issues.
 
-<img width="1010" height="684" alt="Ekran görüntüsü_2025-11-02_21-07-51" src="https://github.com/user-attachments/assets/607fac22-7e7e-44a9-a21c-0525c087f793" />
+<img width="1010" height="907" alt="Ekran görüntüsü_2025-11-06_02-16-52" src="https://github.com/user-attachments/assets/5394cf15-8513-4e38-83b7-291f428a8455" />
 
-<img width="1010" height="684" alt="Ekran görüntüsü_2025-11-02_21-08-26" src="https://github.com/user-attachments/assets/37666b8f-d78e-482e-8c4e-c77d7089e645" />
-
+<img width="1010" height="907" alt="Ekran görüntüsü_2025-11-06_02-17-12" src="https://github.com/user-attachments/assets/4f057c22-fdcd-4634-a12a-085fff2bbf90" />
 
 FEATURES:
 
@@ -40,6 +40,8 @@ FEATURES:
 -Excludes empty and unimportant files. (Uncheck the box for files like thumbs.db)
 
 -Excludes sensitive system folders and files. (Don't touch these settings.)
+
+-Extension filters (added on 0.2 version)
 
 -Built-in two language options: EN (default), TR
 
