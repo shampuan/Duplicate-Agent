@@ -111,7 +111,7 @@ def _find_icon_path(icon_name="dup.png"):
         return path_in_cwd
 
     # 2. Sistem yolu
-    system_path = os.path.join("/usr/share/Duplicate Agent/", icon_name)
+    system_path = os.path.join("/usr/share/DuplicateAgent/", icon_name)
     if os.path.exists(system_path):
         return system_path
 
