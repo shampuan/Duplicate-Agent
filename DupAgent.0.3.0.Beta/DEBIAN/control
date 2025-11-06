@@ -1,0 +1,11 @@
+Package: duplicate-agent
+Version: 0.3.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: python3, python3-pyqt6
+Maintainer: A. Serhat KILIÇOĞLU <www.github.com/shampuan>
+Description: Duplicate Agent
+ Duplicate Agent, dosya içeriğini (hash) kullanarak sisteminizdeki yinelenen dosyaları bulmanıza ve güvenli bir şekilde çöp kutusuna taşımanıza yardımcı olan bir Python uygulamasıdır.
+ .
+ Program, PySide6 kütüphanesini kullanarak modern bir arayüze sahiptir ve dosya sistemini derinlemesine tarar.
