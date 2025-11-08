@@ -17,9 +17,9 @@ This is a file deletion program and requires careful use. Additionally:
 
 The program is still in beta and has some known issues.
 
-<img width="1010" height="907" alt="Ekran görüntüsü_2025-11-06_02-16-52" src="https://github.com/user-attachments/assets/5394cf15-8513-4e38-83b7-291f428a8455" />
+<img width="1110" height="907" alt="Ekran görüntüsü_2025-11-08_03-55-58" src="https://github.com/user-attachments/assets/722d10f5-aa22-41e3-b452-7a8c70c4a203" />
+<img width="1110" height="907" alt="Ekran görüntüsü_2025-11-08_03-55-24" src="https://github.com/user-attachments/assets/1cd03d01-7527-4ab5-967f-d586090772cf" />
 
-<img width="1010" height="907" alt="Ekran görüntüsü_2025-11-06_02-17-12" src="https://github.com/user-attachments/assets/4f057c22-fdcd-4634-a12a-085fff2bbf90" />
 
 FEATURES:
 
