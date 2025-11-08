@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Duplicate Agent
+Name[tr]=Kopya Ajanı
+Comment=Find and safely remove duplicate files using content hashing.
+Comment[tr]=Dosya içeriği hash'i kullanarak yinelenen dosyaları bulur ve güvenli bir şekilde çöp kutusuna taşır.
+Exec=/usr/share/DuplicateAgent/duplicateagent.py
+Icon=dup
+Terminal=false
+Type=Application
+Categories=Utility;FileTools;
+Keywords=duplicate;file;hash;finder;cleaner;kopya;ajan;
+StartupNotify=true
+MimeType=
+
