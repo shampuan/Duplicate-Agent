@@ -23,30 +23,28 @@ The program is still in beta and has some known issues.
 
 FEATURES:
 
--Select/remove folders to scan.
+**Core Features:**
+- Select/remove folders to scan
+- Multiple comparison options (MD5, file size, name, extension)
+- Color-coded duplicate groups
+- Extension filters for targeted scanning
+- 19+ language support (EN, TR, DE, FR, ES, IT, PT, RU, ZH, JA, KO, AR, and more)
+- System theme adaptation (Light/Dark)
+- Safe trash system (never deletes files permanently without confirmation)
 
--Sufficient and Ideal comparison options:
+**Advanced Features (New):**
+- 🔍 **File System Watchdog**: Real-time duplicate detection for new files
+- ⏰ **Scheduled Scanning**: Cron-like automatic scanning (daily, weekly, hourly)
+- 🖼️ **Similar File Finder**: Find similar images using perceptual hashing
+- 📁 **Duplicate Folder Finder**: Detect identical directory trees
+- 🗜️ **Compression Suggester**: Archive duplicates instead of deleting
+- 📊 **Enhanced Statistics**: Detailed reports and savings analysis
 
--Based on MD5 calculation
-
--Based on file size
-
--Based on file name
-
--Based on file extension
-
--Displays multiple files in color-coded groups, and you decide which ones to delete.
-
--Excludes empty and unimportant files. (Uncheck the box for files like thumbs.db)
-
--Excludes sensitive system folders and files. (Don't touch these settings.)
-
--Extension filters (added on 0.2 version)
-
--Built-in two language options: EN (default), TR
-
--Adapts to your system's Light/Dark theme and any installed themes.
-
--Never deletes files all at once; it sends them to the trash. If you're using an external drive, it creates a .Trash.1000 file if it hasn't been created yet and sends it to the drive. You can recover your files if you regret it.
+**Technical Features:**
+- Chunked MD5 hashing for memory efficiency
+- Disk-based trash management per mount point
+- Multi-threaded scanning
+- Configurable file filters
+- Logging system for debugging
 
 You can volunteer to use or test the program.

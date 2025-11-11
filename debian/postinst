@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+case "$1" in
+    configure)
+        # Update desktop database
+        if [ -x /usr/bin/update-desktop-database ]; then
+            update-desktop-database -q /usr/share/applications
+        fi
+        
+        # Update icon cache
+        if [ -x /usr/bin/gtk-update-icon-cache ]; then
+            gtk-update-icon-cache -q -f /usr/share/pixmaps 2>/dev/null || true
+        fi
+        
+        echo "Duplicate Agent başarıyla kuruldu!"
+        echo "Başlatmak için: duplicate-agent veya Applications menüsünden"
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

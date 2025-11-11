@@ -1,0 +1,3 @@
+dup.png usr/share/pixmaps/
+duplicate-agent.desktop usr/share/applications/
+languages/*.ini usr/share/DuplicateAgent/languages/

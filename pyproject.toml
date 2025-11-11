@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duplicate-agent"
+version = "0.9.1"
+description = "A powerful duplicate file finder and cleaner with GUI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "GPLv3"}
+authors = [
+    {name = "A. Serhat KILIÇOĞLU (shampuan)", email = ""}
+]
+keywords = ["duplicate", "files", "finder", "cleaner", "deduplication", "watchdog", "similar-files"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PySide6>=6.5.0",
+    "watchdog>=3.0.0",
+    "schedule>=1.2.0",
+    "pillow>=10.0.0",
+    "imagehash>=4.3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-qt>=4.0",
+    "pylint>=2.17",
+    "black>=23.0",
+    "pyinstaller>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/shampuan/Duplicate-Agent"
+Repository = "https://github.com/shampuan/Duplicate-Agent"
+"Bug Tracker" = "https://github.com/shampuan/Duplicate-Agent/issues"
+
+[project.scripts]
+duplicate-agent = "duplicateagent0.9.1:main"
+duplicate-agent-gui = "duplicateagent0.9.1:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov --cov-report=html --cov-report=term"
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+
+[tool.pylint.messages_control]
+max-line-length = 100

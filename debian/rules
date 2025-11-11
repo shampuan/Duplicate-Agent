@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+	# Install icon
+	install -Dm644 dup.png debian/duplicate-agent/usr/share/pixmaps/duplicate-agent.png
+	# Install desktop file
+	install -Dm644 duplicate-agent.desktop debian/duplicate-agent/usr/share/applications/duplicate-agent.desktop
+	# Install language files
+	mkdir -p debian/duplicate-agent/usr/share/DuplicateAgent/languages
+	cp -r languages/*.ini debian/duplicate-agent/usr/share/DuplicateAgent/languages/
+	# Install main script
+	install -Dm755 duplicateagent0.9.1.py debian/duplicate-agent/usr/share/DuplicateAgent/duplicateagent0.9.1.py
+	# Install src modules
+	mkdir -p debian/duplicate-agent/usr/share/DuplicateAgent/src
+	cp -r src/*.py debian/duplicate-agent/usr/share/DuplicateAgent/src/
+	# Create launcher script
+	mkdir -p debian/duplicate-agent/usr/bin
+	echo '#!/bin/bash' > debian/duplicate-agent/usr/bin/duplicate-agent
+	echo 'cd /usr/share/DuplicateAgent' >> debian/duplicate-agent/usr/bin/duplicate-agent
+	echo 'python3 duplicateagent0.9.1.py "$$@"' >> debian/duplicate-agent/usr/bin/duplicate-agent
+	chmod +x debian/duplicate-agent/usr/bin/duplicate-agent
+
+override_dh_installdocs:
+	dh_installdocs README.md
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf build/
+	rm -rf *.egg-info/
+	find . -name __pycache__ -type d -exec rm -rf {} +
+	find . -name "*.pyc" -delete

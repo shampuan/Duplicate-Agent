@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Duplicate Agent
+Name[tr]=Duplicate Agent
+GenericName=Duplicate File Finder
+GenericName[tr]=Kopya Dosya Bulucu
+Comment=Find and clean duplicate files on your system
+Comment[tr]=Sisteminizdeki kopya dosyaları bulun ve temizleyin
+Exec=duplicate-agent
+Icon=duplicate-agent
+Terminal=false
+Categories=Utility;FileTools;System;Qt;
+Keywords=duplicate;files;cleaner;disk;space;deduplication;
+StartupNotify=true
+StartupWMClass=DuplicateAgent

@@ -1,0 +1,34 @@
+Source: duplicate-agent
+Section: utils
+Priority: optional
+Maintainer: A. Serhat KILIÇOĞLU (shampuan) <shampuan@github.com>
+Build-Depends: debhelper (>= 11), python3-all, dh-python, python3-setuptools
+Standards-Version: 4.5.0
+Homepage: https://github.com/shampuan/Duplicate-Agent
+Vcs-Git: https://github.com/shampuan/Duplicate-Agent.git
+Vcs-Browser: https://github.com/shampuan/Duplicate-Agent
+
+Package: duplicate-agent
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends},
+         python3-pyside6.qtwidgets,
+         python3-pyside6.qtcore,
+         python3-pyside6.qtgui,
+         python3-watchdog,
+         python3-schedule,
+         python3-pil,
+         python3-imagehash
+Description: Advanced duplicate file finder and cleaner
+ Duplicate Agent is a powerful tool for finding and cleaning
+ duplicate files on your system.
+ .
+ Features:
+  * MD5-based duplicate detection
+  * Similar file finder (perceptual hash)
+  * Duplicate folder finder
+  * File system watchdog (real-time monitoring)
+  * Scheduled scanning
+  * Compression suggester
+  * Multi-language support (19+ languages)
+  * Safe trash system
+  * Beautiful Qt-based GUI

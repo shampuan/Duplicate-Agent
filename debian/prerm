@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+case "$1" in
+    remove|upgrade|deconfigure)
+        # Cleanup user data (optional)
+        # rm -rf ~/.duplicateagent
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0
