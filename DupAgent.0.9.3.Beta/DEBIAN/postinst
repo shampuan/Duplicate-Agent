@@ -1,0 +1,29 @@
+#!/bin/bash
+# postinst betiği - PySide6'yı pip ile zorlayarak kurar.
+
+# Gerekli bayrağı kontrol et:
+if python3 --version 2>&1 | grep -q "Python 3\.[1-9]"; then
+    # python3-pip'in doğru şekilde kurulu olduğundan emin olalım (sistem paketinden)
+    if ! command -v pip3 &> /dev/null
+    then
+        echo "Hata: pip3 bulunamadı, kurulum devam edemiyor." >&2
+        exit 1
+    fi
+
+    # PySide6 paketini kur.
+    # --break-system-packages: Sistemin Python paket korumasını aşmak için ZORUNLU bayrak koyduk.
+    echo "PySide6 paketi pip ile kuruluyor (Sistem paket koruması aşılıyor)..."
+    python3 -m pip install PySide6 --break-system-packages
+    
+    # Komutun başarılı olup olmadığını kontrol et (Gerekli değil, ama iyi fikir)
+    if [ $? -eq 0 ]; then
+        echo "PySide6 başarıyla kuruldu."
+    else
+        echo "UYARI: PySide6 kurulumu başarısız oldu. Kullanıcı manuel olarak kontrol etmeli." >&2
+    fi
+else
+    # Daha eski Python sürümleri için varsayılan pip komutu
+    pip3 install PySide6
+fi
+
+exit 0
